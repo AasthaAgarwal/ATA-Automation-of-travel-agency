@@ -17,7 +17,7 @@ public class CredentialsDaoImpl implements CredentialsDao{
 	private Connection con = DBUtil.getConnectio();
 	@Override
 	public String createCredentials(CredentialsBean credentialsBean , String prefix){
-		
+		//comment added for demo of github
 		String id = getUserId(prefix);
 		try {
 			final byte[] keyBytes = "0123456789ABCDEF01234567".getBytes("ASCII");
